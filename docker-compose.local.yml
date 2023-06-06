@@ -1,0 +1,18 @@
+version: "3"
+services:
+  bitcoin-core:
+    platform: linux/amd64
+    image: ruimarinho/bitcoin-core
+    container_name: bitcoin-server
+    restart: always
+    volumes:
+      - ./data:/root/.bitcoin
+      - ./local-boot.sh:/home/bitcoin/boot.sh
+    ports:
+      - 127.0.0.1:8333:8333
+      - 127.0.0.1:8332:8332
+      - 127.0.0.1:18332:18332
+      - 127.0.0.1:18333:18333
+      - 127.0.0.1:18443:18443
+      - 127.0.0.1:18444:18444
+    command: bash /home/bitcoin/boot.sh

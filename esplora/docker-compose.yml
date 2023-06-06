@@ -1,0 +1,16 @@
+version: "3"
+services:
+  electr:
+    platform: linux/amd64
+    restart: always
+#    image: esplora
+    build: .
+    container_name: esplora
+    ports:
+      - 127.0.0.1:3004:50001
+      - 127.0.0.1:3002:80
+    environment:
+      - RPC_URL=116.203.193.164:18444
+      - RPC_USER=deop-regtest
+      - RPC_PASSWORD=deop-regtest
+    command: bash /srv/explorer/run.sh bitcoin-regtest explorer

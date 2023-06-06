@@ -1,0 +1,12 @@
+[Unit]
+Description=Ordinals Scan service
+
+[Service]
+User=ubuntu
+WorkingDirectory=/home/ubuntu/deop-devnet/
+ExecStart=/usr/bin/bash /home/ubuntu/deop-devnet/ord.sh server --http-port 3003
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
+
