@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
-pm2 start ./ordinals-indexer/start_chainhook.sh
+pm2 start -f ./ordinals-indexer/start_chainhook.sh
 
 cd ./ordinals-api/
-pm2 start dist/src/index.js
+pm2 start -f dist/src/index.js
 
 cd ../
