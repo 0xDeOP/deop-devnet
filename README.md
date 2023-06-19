@@ -43,3 +43,4 @@ bash ./start_indexer.sh
 - Ordinals: https://ordinals.deop.pro/
 - Mint: https://mint.deop.pro/
 - Wallet: https://wallet.deop.pro/
+- Ordinals Indexer API: https://ordinals-api.deop.pro/
