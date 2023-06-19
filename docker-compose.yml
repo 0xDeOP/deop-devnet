@@ -16,6 +16,9 @@ services:
       - 127.0.0.1:18443:18443
       - 127.0.0.1:18444:18444
       - 127.0.0.1:29000:29000 # zmq port
+      - 127.0.0.1:29000:29001 # zmq port
+      - 127.0.0.1:29000:29002 # zmq port
+      - 127.0.0.1:29000:29003 # zmq port  
     command: bash /home/bitcoin/boot.sh
 
   esplora:
