@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+### install deps
+sudo apt-get install -y libclang-dev pkg-config
+
 ### Reload source
 source ~/.profile
 
