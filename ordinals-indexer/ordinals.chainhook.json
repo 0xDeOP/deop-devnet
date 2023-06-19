@@ -1,0 +1,21 @@
+{
+    "chain": "bitcoin",
+    "uuid": "818725a4-555d-46db-a60c-213a506b37ba",
+    "name": "inscription_feed",
+    "version": 1,
+    "networks": {
+      "regtest": {
+        "start_block": 0,
+        "if_this": {
+          "scope": "ordinals_protocol",
+          "operation": "inscription_feed"
+        },
+        "then_that": {
+          "http_post": {
+            "url": "http://localhost:3099/chainhook/inscription_feed",
+            "authorization_header": "Bearer cn389ncoiwuencr"
+          }
+        }
+      }
+    }
+  }

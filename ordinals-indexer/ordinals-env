@@ -1,0 +1,11 @@
+# See src/env.ts for environment variable documentation.
+RUN_MODE=default
+PGHOST=127.0.0.1
+PGPORT=5432
+PGUSER=postgres
+PGPASSWORD=postgres
+PGDATABASE=ordinals
+CHAINHOOK_NODE_RPC_HOST=127.0.0.1
+CHAINHOOK_NODE_RPC_PORT=20456
+CHAINHOOK_NODE_AUTH_TOKEN="cn389ncoiwuencr"
+EXTERNAL_HOSTNAME=127.0.0.1:3000

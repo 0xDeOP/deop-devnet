@@ -4,3 +4,10 @@ cache/
 electrs/
 temp/
 ord-data/
+db/
+redis_data/
+chainhook/
+ordinals-api/
+node_modules/
+postgres-data/
+redis_data/
