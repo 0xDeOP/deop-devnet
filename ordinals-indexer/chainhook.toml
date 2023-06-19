@@ -15,6 +15,7 @@ bitcoind_rpc_url = "http://127.0.0.1:18443"
 bitcoind_rpc_username = "deop-regtest"
 bitcoind_rpc_password = "deop-regtest"
 stacks_node_rpc_url = "http://127.0.0.1:20443"
+bitcoind_zmq_url = "http://127.0.0.1:29000"
 
 [limits]
 max_number_of_bitcoin_predicates = 100
