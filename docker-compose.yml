@@ -39,6 +39,7 @@ services:
     command: bash /srv/explorer/run.sh bitcoin-regtest explorer
 
   postgres:
+    container_name: postgres
     image: postgres:14.1-alpine
     restart: always
     environment:
@@ -51,6 +52,7 @@ services:
       - postgres_db:/var/lib/postgresql/data
         
   redis:
+    container_name: redis
     image: docker.io/bitnami/redis:7.0
     restart: always
     environment:
