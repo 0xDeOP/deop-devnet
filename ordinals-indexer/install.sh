@@ -35,6 +35,7 @@ else
   cp ordinals-indexer/ordinals-env ordinals-api/.env
   cd ordinals-api/
   npm install
+  npm run generate:git-info
   npm run build
   cd ../
 fi
