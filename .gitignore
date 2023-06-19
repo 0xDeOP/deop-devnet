@@ -11,3 +11,4 @@ ordinals-api/
 node_modules/
 postgres-data/
 redis_data/
+postgres-db/
