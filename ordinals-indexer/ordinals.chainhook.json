@@ -5,7 +5,6 @@
     "version": 1,
     "networks": {
       "regtest": {
-        "start_block": 0,
         "if_this": {
           "scope": "ordinals_protocol",
           "operation": "inscription_feed"
